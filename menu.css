@@ -1,0 +1,148 @@
+/* MENU CODE */
+
+.jqueryslidemenu {
+	display: inline-block;
+	float: right;
+}
+
+.jqueryslidemenu ul {
+	margin:0px;
+	list-style:none;
+	width:auto;
+	padding: 0px;
+}
+
+.jqueryslidemenu li {
+	position: relative;
+	display: inline-block;
+	line-height : 1.3em;
+	list-style: none;
+	padding: 0px;
+	margin:0px;
+	background-image: none;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+
+.jqueryslidemenu li ul { /* second-level lists */
+	position : absolute;
+	left:-999em;
+	width:16em;
+	z-index: 99;
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.27);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.27);
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.27);
+}
+
+
+.jqueryslidemenu a {
+	font-size: 16px;
+	text-transform: uppercase;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	color: #000;
+	padding-bottom: 12px!important;
+	padding-top: 12px!important;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-right: 0px;
+	font-family: 'gothic' !important;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+
+.jqueryslidemenu li li {
+	padding: 0px;
+	width:16em;
+	display: block;
+}
+
+.jqueryslidemenu li a:hover {
+	color: #e2ae00;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;  
+}
+
+.jqueryslidemenu li.current_page_item a {
+	color: #e2ae00;
+}
+
+.jqueryslidemenu li.current_page_parent a {
+	color: #e2ae00;
+}
+
+.jqueryslidemenu li.current_page_ancestor a {
+	color: #e2ae00;
+}
+
+/* sub menu */
+
+.jqueryslidemenu li li a {
+	padding: 12px;
+	padding-bottom: 12px!important;
+	padding-top: 12px!important;
+	font-size: 14px;
+	font-weight: normal;
+	color: #fff!important;
+	margin: 0px;
+	float: none;
+	width: auto;
+	height: auto;
+	text-align:left;
+	line-height: normal;
+	background-repeat: repeat-x;
+	background-color: #555;
+	background-image: none;
+	display: block;
+	border-bottom-width: 0px!important;
+	border-bottom-style: solid!important;
+	border-bottom-color: transparent!important;
+}
+
+.jqueryslidemenu li li a:hover {
+	background-color: #333;
+}
+
+.jqueryslidemenu li.current_page_item ul { /* second-level lists */
+	position : absolute;
+	left: -999em;
+	width:16em;
+	z-index: 99;
+}
+
+
+.jqueryslidemenu .DisabledTab {
+	color:#ccc;
+}
+
+/* no need to change these hover classes 
+unless you need more than 4 levels */
+.jqueryslidemenu li:hover ul ul,
+.jqueryslidemenu li:hover ul ul ul,
+.jqueryslidemenu li:hover ul ul ul ul,
+.jqueryslidemenu li.iehover ul ul,
+.jqueryslidemenu li.iehover ul ul ul,
+.jqueryslidemenu li.iehover ul ul ul ul{
+	left:-999em;
+}
+
+.jqueryslidemenu li:hover ul, 
+.jqueryslidemenu li.iehover ul {
+	top: 39px;
+	left:0;
+}
+
+.jqueryslidemenu li li:hover ul,
+.jqueryslidemenu li li li:hover ul,
+.jqueryslidemenu li li.iehover ul,  
+.jqueryslidemenu li li li.iehover ul {
+	top: 0;
+	left:14.0em;
+}
